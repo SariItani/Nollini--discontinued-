@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta
+			name="viewport"
+			content="with=device-width, initial-scale=1.0"
+			charset="utf-8"
+		/>
+		<title>Shop | DEMO</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav id="navbar">
+				<img src="images/logo.png" class="logo" />
+				<ul id="menu">
+					<li>
+						<a href="#"><b> HOME</b></a>
+					</li>
+					<li>
+						<a href="#"><b>PRODUCTS</b></a>
+					</li>
+					<li>
+						<a href="#"><b>CONTACT</b></a>
+					</li>
+					<li>
+						<a href="#"><b>ACCOUNT</b></a>
+					</li>
+					<img src="images/cart2.png" class="cart" />
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-2">
+					<h1>Find your best products<br />here at Nollini!</h1>
+					<a href="" class="btn">Explore Now &neArr;</a>
+				</div>
+				<div class="col-2">
+					<img src="images/shop.png" width="300px" />
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+		<script>
+			var navbar = document.getElementById("navbar");
+			var menu = document.getElementById("menu");
+			window.onscroll = function () {
+				if (window.pageYOffset >= menu.offsetTop) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			};
+		</script>
+	</body>
+</html>
