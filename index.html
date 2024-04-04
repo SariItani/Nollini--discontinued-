@@ -13,49 +13,42 @@
 			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
 		/>
 	</head>
-	<body>
-		<header>
-			<nav id="navbar">
-				<img src="images/logo.png" class="logo" />
-				<ul id="menu">
-					<li>
-						<a href="#"><b> HOME</b></a>
-					</li>
-					<li>
-						<a href="#"><b>PRODUCTS</b></a>
-					</li>
-					<li>
-						<a href="#"><b>CONTACT</b></a>
-					</li>
-					<li>
-						<a href="#"><b>ACCOUNT</b></a>
-					</li>
-					<img src="images/cart2.png" class="cart" />
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<div class="row">
-				<div class="col-2">
-					<h1>Find your best products<br />here at Nollini!</h1>
-					<a href="" class="btn">Explore Now &neArr;</a>
+	<body class="styling">
+		<div class="header">
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+						<img src="images/logo.png" width="100px" />
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Account</a></li>
+						</ul>
+					</nav>
+					<img src="images/cart.png" width="30px" height="30px" />
 				</div>
-				<div class="col-2">
-					<img src="images/shop.png" width="300px" />
+				<div class="row">
+					<div class="col-2">
+						<h1>Find your best products<br />here at Nollini!</h1>
+						<a href="" class="btn">Explore Now &neArr;</a>
+					</div>
+					<div class="col-2">
+						<img src="images/shop.png" width="300px" />
+					</div>
 				</div>
 			</div>
-		</main>
-		<footer></footer>
-		<script>
-			var navbar = document.getElementById("navbar");
-			var menu = document.getElementById("menu");
-			window.onscroll = function () {
-				if (window.pageYOffset >= menu.offsetTop) {
-					navbar.classList.add("sticky");
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			};
-		</script>
+		</div>
+		<!-- Feautured Categories -->
+		<div class="categories">
+			<div class="row">
+				<div class="col-3"><img src="images/category1.png" /></div>
+				<div class="col-3"><img src="images/category2.png" /></div>
+				<div class="col-3"><img src="images/category3.png" /></div>
+			</div>
+		</div>
 	</body>
 </html>
